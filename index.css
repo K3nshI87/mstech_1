@@ -115,10 +115,11 @@
     background-color: #282829;
     padding-top: 100px;
     gap: 20px; /* добавим промежуток между изображением и колонкой */
+    justify-content: space-between;
 }
 
 .content__image {
-    width: 522px;
+    width: 622px;
     height: 724px;
     object-fit: cover; /* гарантирует, что изображение не растягивается */
     margin-left: 0; /* убираем отступ слева */
