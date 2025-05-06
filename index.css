@@ -8,32 +8,44 @@
 .header {
     display: flex;
     justify-content: space-between;
+    position: sticky;
 }
 
 .header__column {
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
+    margin-left: 200px;
 }
 
 .header__image {
     width: 763px;
-    height: 909px;
+    height: 1009px;
 }  
 
 .header__button {
     padding: 39.5px 50px;
     font-size: 24px;
     line-height: 150%;
-    letter-spacing: 0.04em;;
+    letter-spacing: 0.04em;
     font-weight: bold;
     border-radius: 4px;
-    display: inline-block; /* или inline-flex */
+    display: inline-block;
     width: auto;  
     cursor: pointer;
     margin-top: 40px;
     max-width: 190px;
+    border: 2px solid transparent; /* прозрачная граница */
+    transition: all 0.3s ease; /* Плавный переход */
 }
+
+.header__button:hover {
+    background-color: #28a745; /* Цвет фона при наведении (красивый зелёный) */
+    color: white; /* Цвет текста при наведении */
+    transform: translateY(-5px); /* Легкое поднимание кнопки */
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4); /* Тень для глубины */
+    border: 2px solid #28a745; /* Цвет границы при наведении */
+}
+
 
 .header__nav {
     display: inline-flex;
@@ -96,3 +108,74 @@
     gap: 8px; /* расстояние между иконкой и текстом */
     margin-bottom: 8px; /* расстояние между строками */
   }
+
+/* CONTENT SECTION */
+.content {
+    display: flex;
+    background-color: #282829;
+    padding-top: 100px;
+    gap: 20px; /* добавим промежуток между изображением и колонкой */
+}
+
+.content__image {
+    width: 522px;
+    height: 724px;
+    object-fit: cover; /* гарантирует, что изображение не растягивается */
+    margin-left: 0; /* убираем отступ слева */
+}
+
+.content__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px; /* добавляем отступ слева для контента */
+    padding-right: 50px; /* добавляем отступ справа для контента */
+    max-width: 500px; /* Ограничиваем максимальную ширину для текста */
+}
+
+.content__column-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.content__column-list_item {
+    font-size: 20px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    padding: 20px 0;
+    border-bottom: 0.1px solid #55565a;
+    box-sizing: border-box; /* Убедимся, что границы учитываются в ширине */
+}
+
+.content__column_button {
+    margin-top: 20px;
+    padding: 32px 50px;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    font-weight: bold;
+    border-radius: 4px;
+    display: inline-block;
+    width: auto;  
+    cursor: pointer;
+    margin-top: 40px;
+    max-width: 190px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease; 
+}
+
+.content__column_button:hover {
+    background-color: #28a745; /* Цвет фона при наведении (красивый зелёный) */
+    color: white; /* Цвет текста при наведении */
+    transform: translateY(-5px); /* Легкое поднимание кнопки */
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4); /* Тень для глубины */
+    border: 2px solid #28a745; /* Цвет границы при наведении */
+}
+
