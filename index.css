@@ -156,7 +156,6 @@
 }
 
 .content__column_button {
-    margin-top: 20px;
     padding: 32px 50px;
     font-size: 24px;
     line-height: 150%;
@@ -166,17 +165,129 @@
     display: inline-block;
     width: auto;  
     cursor: pointer;
-    margin-top: 40px;
-    max-width: 190px;
+    margin-top: 100px;
+    min-width: 500px;
     border: 2px solid transparent;
     transition: all 0.3s ease; 
 }
 
 .content__column_button:hover {
-    background-color: #28a745; /* Цвет фона при наведении (красивый зелёный) */
-    color: white; /* Цвет текста при наведении */
-    transform: translateY(-5px); /* Легкое поднимание кнопки */
-    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4); /* Тень для глубины */
-    border: 2px solid #28a745; /* Цвет границы при наведении */
+    background-color: #28a745;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+    border: 2px solid #28a745;
 }
 
+/* REGISTER */
+
+.register {
+    padding: 100px 0;
+    background-color: #282829;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register__area {
+    width: 80%;
+    background-color: white;
+    display: flex;
+    max-height: 628px;
+    justify-content: space-between;
+    border-radius: 25px;
+}
+
+.register__area_left {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    min-width: 748px;
+}
+
+.register__title {
+    color: #38535d;
+    font-family: 'Prata', serif;
+    font-size: 54px;
+    line-height: 110%;
+    width: 448px;
+    margin-top: 62.5px;
+}
+
+.register__form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 62.5px;
+}
+
+.register__input {
+    height: 65px;
+    margin-bottom: 13px;
+    font-size: 24px;
+    line-height: 150%;
+    border: 2px solid #d6d6d6;
+}
+
+.register__checkbox-label {
+    font-size: 19px;
+    margin: 10px 0 22px;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    color: #38535d;
+}
+
+.register__checkbox {
+    width: 24px;
+    height: 24px;
+}
+
+.register__submit {
+    padding: 22px;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    font-weight: normal;
+    background-color: #282829;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.register__submit:hover {
+    background-color: #28a745;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+    border: 2px solid #28a745;
+}
+
+.register__background-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 613px;
+    transform: translateX(-0px); /* смещает фон внутрь формы */
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .register__area {
+    position: relative; /* чтобы фон и человек позиционировались относительно блока */
+    overflow: visible; /* не обрезать изображения */
+  }
+  
+  .register__human-img {
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(20%);
+    height: 115%;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+
+  
