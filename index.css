@@ -61,7 +61,16 @@
   }
   
   @media (max-width: 600px) {
+    .register {
+      width: 100%;
+    }
+
+    .footer {
+      width: 100%;
+    }
+
     .content {
+      width: 100%;
       gap: 40px;
     }
   
